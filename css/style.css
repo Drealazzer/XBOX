@@ -31,6 +31,7 @@ body {
 }
 .menu-item a {
   margin: 0 0 0 25px;
+  transition: all 0.5s ease 0s;
 }
 
 .menu-item a {
@@ -48,6 +49,7 @@ body {
 }
 
 .home-content {
+  color: #6ceb4d;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,31 +57,119 @@ body {
   height: 100vh;
 }
 
-.home-title{
-  color: beige;
+.home-button a:hover {
+  color: #74b431;
 }
 
-.footer{
+.home-button {
+  color: #ffffff;
+  margin: 103px 0 0 0;
+  padding: 20px 50px;
+  background: #373a3c;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 21px;
+  border-radius: 4px;
+  transition: all 0.5s ease 0s;
+  cursor: pointer;
+}
+
+.home-button:hover {
+  background-color: #74b431;
+}
+
+.home-title {
+  color: beige;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 75px;
+  line-height: 94px;
+}
+
+.home-subtitle {
+  position: absolute;
+  height: 30px;
+  left: 45.86%;
+  right: 45.07%;
+  top: calc(50% - 30px / 2 + 16px);
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.pads {
+  padding: 114px 0 145px 0;
+  background: url(../img/rectangle.jpg) no-repeat right;
+  background-size: cover;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.pads-title {
+  font-size: 48px;
+  line-height: 56px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.pads-text {
+  font-size: 24px;
+  line-height: 56px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.pads-blox {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.pads-button {
+  padding: 20px 50px;
+  background: #373a3c;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffff;
+  border-radius: 4px;
+  transition: all 0.5s ease 0s;
+}
+
+.pads-button:hover {
+  background-color: #6ceb4d;
+}
+
+.footer {
   padding: 58px 0 0 0;
   background: #373a3c;
 }
 
-.footer-content{
+.footer-content {
   display: flex;
 }
 
-.footer-block{
+.footer-block {
   flex: 0 0 33%;
   padding: 0 0 0 65px;
 }
 
-.footer-title{
+.footer-title {
   margin: 0 0 34px 0;
   font-size: 18px;
   line-height: 21px;
   color: #6ceb4d;
 }
-.footer-link{
+.footer-link {
   display: block;
   margin: 0 0 28px 0;
   font-size: 14px;
@@ -88,19 +178,23 @@ body {
   text-decoration: none;
 }
 
-.footer-social{
+.footer-link:hover {
+  color: #6ceb4d;
+}
+
+.footer-social {
   display: inline-block;
   margin: 0 10px 0 0;
 }
 
-.footer-bottom{
+.footer-bottom {
   display: flex;
   justify-content: space-between;
   padding: 20px 0 40px 0;
   border-top: 1px solid white;
 }
 
-.footer-text{
+.footer-text {
   font-size: 16px;
   line-height: 19px;
   color: white;
